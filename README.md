@@ -63,15 +63,27 @@ MouseJack-Forschung von Bastille.
    nicht eindeutig). Schwache Leads: linke Taste evtl. um Bit `0.0`, Scroll
    evtl. um byte[9/10].
 
-### Nächster Schritt: echter XN297-Empfang
+### Nächster Schritt: echter XN297-Empfang (Adress-Trick)
 
-Der eigentliche Hebel ist jetzt klar: **XN297-Empfang ist auf nRF-Chips ein
-gelöstes Problem** (DeviationTX / Multiprotocol / goebish). Richtig
-konfiguriert (passende Adresse/Preamble für den XN297, danach pro Byte
-bit-reverse + XOR mit der Scramble-Tabelle) rastet der nRF byte-genau auf
-**jedes** Paket ein → volle Rate → sauberes Descramblen → Felder (X/Y, Tasten,
-Scroll) decodierbar. Alternativ hilft weiterhin der K7-Treiber/Dongle-USB-
-Mitschnitt oder ein SDR für lückenlose Rohaufnahmen.
+Host-seitiges Descramblen der Promiscuous-Captures scheitert, weil jedes
+Paket mit leicht anderer Bit-Phase gefangen wird (der `0xAAAAAA`-Lock ist
+nicht byte-genau). Lösung ist die **Hardware-Reception** (gelöst in
+DeviationTX / Multiprotocol / goebish `XN297_emu.ino`, iNav `nrf24_cx10.c`):
+
+- **Adresse:** echte XN297-Adresse byte-für-byte mit `xn297_scramble` XOR-en
+  und **bit-reversen**, das Ergebnis als nRF-RX-Adresse setzen. Der
+  HW-Korrelator rastet dann auf den rohen gescrambelten Bitstream ein →
+  **jedes** Paket, byte-genau.
+- **Preamble:** 0x55 bzw. 0xAA je nach erstem Adressbit; Auto-Ack aus.
+- **Payload descramblen:** `rev(byte) ^ rev(xn297_scramble[i])`
+  (= `tools/xn297.py` Mode 4), Tabelle aus LFSR x⁷+x³+1 / Seed 0x71.
+- **Achtung PCF:** „enhanced" XN297 hat ein ~9–10-Bit-PCF zwischen Adresse
+  und Payload → Payload ist **nicht byte-aligned**, vor dem Descramble um die
+  PCF-Bits shiften.
+- **CRC:** CRC-16/CCITT über entscrambelte Adresse+PCF+Payload, Init/XorOut
+  0xFFFF, CRC selbst gescrambelt gesendet.
+
+Alternativen weiterhin: K7-Treiber/Dongle-USB-Mitschnitt oder SDR.
 
 ## src/main.c — aktueller Stand: Promiscuous-Empfänger
 

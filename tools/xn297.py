@@ -71,7 +71,8 @@ def rev8(b):
 
 
 def descramble(frame, scram_off, mode):
-    """mode: 0 raw^s, 1 rev(b)^s, 2 rev(b^s), 3 b^s dann rev."""
+    """mode: 0 raw^s, 1 rev(b)^s, 2 rev(b^s), 3 b^s dann rev,
+    4 rev(b)^rev(s) (exakter goebish-Descrambler), 5 b^rev(s)."""
     out = bytearray()
     for i, b in enumerate(frame):
         s = XN297_SCRAMBLE[scram_off + i]
@@ -83,6 +84,10 @@ def descramble(frame, scram_off, mode):
             out.append(rev8(b ^ s))
         elif mode == 3:
             out.append(rev8(rev8(b) ^ s))
+        elif mode == 4:
+            out.append(rev8(b) ^ rev8(s))   # goebish: bit_reverse(byte) ^ bit_reverse(scramble)
+        elif mode == 5:
+            out.append(b ^ rev8(s))
     return bytes(out)
 
 
@@ -105,7 +110,7 @@ def main():
     print("Frames: up=%d down=%d move=%d\n" % (len(up), len(dn), len(mv)))
 
     results = []
-    for mode in range(4):
+    for mode in range(6):
         for off in range(0, 8):  # Tabellenposition fuer frame-byte[0]
             if off + FRAME_LEN > len(XN297_SCRAMBLE):
                 continue

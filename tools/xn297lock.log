@@ -1,0 +1,41 @@
+# capture start 2026-11-01 00:10:28 port COM8 dauer 24s
+    0.6049  HB  cfg=rev-B     hits=0 last_rssi=0
+    1.0104  CFG rev-B     -> hits=0 last_rssi=0
+    1.6155  HB  cfg=plain-P   hits=0 last_rssi=0
+    2.4246  CFG plain-P   -> hits=0 last_rssi=0
+    2.6266  HB  cfg=plain-B   hits=0 last_rssi=0
+    3.4349  HB  cfg=plain-B   hits=0 last_rssi=0
+    4.0383  CFG plain-B   -> hits=0 last_rssi=0
+    4.4419  HB  cfg=aa-rev-P  hits=0 last_rssi=0
+    5.4749  CFG aa-rev-P  -> hits=0 last_rssi=0
+    5.4749  HB  cfg=aa-rev-B  hits=0 last_rssi=0
+    6.4848  HB  cfg=aa-rev-B  hits=0 last_rssi=0
+    7.1050  CFG aa-rev-B  -> hits=0 last_rssi=0
+    7.5218  HB  cfg=revrb-P   hits=0 last_rssi=0
+    8.5272  CFG revrb-P   -> hits=0 last_rssi=0
+    8.5272  HB  cfg=revrb-B   hits=0 last_rssi=0
+    9.5367  HB  cfg=revrb-B   hits=0 last_rssi=0
+    9.9393  CFG revrb-B   -> hits=0 last_rssi=0
+   10.5433  HB  cfg=rev-P     hits=0 last_rssi=0
+   11.5524  CFG rev-P     -> hits=0 last_rssi=0
+   11.5524  HB  cfg=rev-B     hits=0 last_rssi=0
+   12.5552  HB  cfg=rev-B     hits=0 last_rssi=0
+   12.9562  CFG rev-B     -> hits=0 last_rssi=0
+   13.5624  HB  cfg=plain-P   hits=0 last_rssi=0
+   14.5711  CFG plain-P   -> hits=0 last_rssi=0
+   14.5711  HB  cfg=plain-B   hits=0 last_rssi=0
+   15.5752  HB  cfg=plain-B   hits=0 last_rssi=0
+   15.9777  CFG plain-B   -> hits=0 last_rssi=0
+   16.5825  HB  cfg=aa-rev-P  hits=0 last_rssi=0
+   17.5892  CFG aa-rev-P  -> hits=0 last_rssi=0
+   17.5892  HB  cfg=aa-rev-B  hits=0 last_rssi=0
+   18.6103  HB  cfg=aa-rev-B  hits=0 last_rssi=0
+   19.0113  CFG aa-rev-B  -> hits=0 last_rssi=0
+   19.6301  HB  cfg=revrb-P   hits=0 last_rssi=0
+   20.6367  CFG revrb-P   -> hits=0 last_rssi=0
+   20.6367  HB  cfg=revrb-B   hits=0 last_rssi=0
+   21.6409  HB  cfg=revrb-B   hits=0 last_rssi=0
+   22.0434  CFG revrb-B   -> hits=0 last_rssi=0
+   22.6495  HB  cfg=rev-P     hits=0 last_rssi=0
+   23.6845  CFG rev-P     -> hits=0 last_rssi=0
+   23.6845  HB  cfg=rev-B     hits=0 last_rssi=0

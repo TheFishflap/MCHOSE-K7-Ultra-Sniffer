@@ -83,7 +83,25 @@ DeviationTX / Multiprotocol / goebish `XN297_emu.ino`, iNav `nrf24_cx10.c`):
 - **CRC:** CRC-16/CCITT über entscrambelte Adresse+PCF+Payload, Init/XorOut
   0xFFFF, CRC selbst gescrambelt gesendet.
 
-Alternativen weiterhin: K7-Treiber/Dongle-USB-Mitschnitt oder SDR.
+**Versucht (Iteration 11, negativ):** der XN297-Adress-Trick auf dem
+nRF52840 — vorgescrambelte/bit-gespiegelte Adresse als RX-Adresse, 8
+Varianten (gespiegelt/ungespiegelt × Offset × Registerkonvention). **0
+Treffer.** Zusammen mit Iter 5/6/7/9 steht fest: die **nRF52840-RADIO rastet
+den XN297-Bitstream hardwareseitig nicht ein** — der goebish-Trick ist für
+einen echten **nRF24L01+** erprobt, und der nRF52840-"2MBit"-Modus ist dafuer
+offenbar nicht ausreichend bit-/preamble-kompatibel (via Zephyr-HAL).
+
+**Empfohlener nächster Weg (Plattform):**
+1. **Echtes nRF24L01+-Modul** (~2 €) an einem MCU — hier läuft goebishs
+   XN297-Empfangscode direkt und erprobt. Wahrscheinlich der schnellste Weg
+   zu sauberen, byte-genauen Paketen.
+2. **SDR** (HackRF/bladeRF) + GNU Radio für lückenlose Rohaufnahmen.
+3. **K7-Treiber/Dongle-USB-Mitschnitt** (Kanalliste, Adresse, Report-Layout,
+   evtl. CRC/PCF direkt aus der Software).
+
+Die Analyse-Tools (`tools/`) und die verifizierte Scramble-/Descramble-Logik
+(`xn297.py`) sind plattformunabhängig und direkt weiterverwendbar, sobald
+saubere Pakete vorliegen.
 
 ## src/main.c — aktueller Stand: Promiscuous-Empfänger
 

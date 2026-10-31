@@ -1,0 +1,61 @@
+# capture start 2026-10-31 22:46:53 port COM5 dauer 25s
+    0.8914  HB  total=85 (+3/s) strong=7 (+0) last_rssi=-68
+    0.8914  HB  total=86 (+1/s) strong=7 (+0) last_rssi=-68
+    0.8914  HB  total=87 (+1/s) strong=7 (+0) last_rssi=-68
+    0.8914  HB  total=89 (+2/s) strong=7 (+0) last_rssi=-68
+    0.8919  PKT rssi=-70 : 6a 9a 55 55 55 59 59 69 59 a9 9a 69 aa a6 a6 96 a6 56 65 96 ae 5a 59 9a a9 5a a5 a5 66 6a 59 a5
+    0.8919  PKT rssi=-58 : 6a aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa
+    0.8924  PKT rssi=-58 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.8924  HB  total=93 (+4/s) strong=10 (+3) last_rssi=-58
+    0.8924  PKT rssi=-59 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.8934  PKT rssi=-61 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.8934  HB  total=98 (+5/s) strong=12 (+2) last_rssi=-61
+    0.8934  HB  total=101 (+3/s) strong=12 (+0) last_rssi=-61
+    0.8934  HB  total=105 (+4/s) strong=12 (+0) last_rssi=-61
+    0.8934  HB  total=105 (+0/s) strong=12 (+0) last_rssi=-61
+    1.0944  HB  total=107 (HB  total=112 (+2/s) strong=12 (+0) last_rssi=-61
+    1.9404  HB  total=115 (+3/s) strong=12 (+0) last_rssi=-61
+    2.9879  HB  total=117 (+2/s) strong=12 (+0) last_rssi=-61
+    4.0359  HB  total=118 (+1/s) strong=12 (+0) last_rssi=-61
+    5.0684  HB  total=121 (+3/s) strong=12 (+0) last_rssi=-61
+    6.0752  HB  total=124 (+3/s) strong=12 (+0) last_rssi=-61
+    6.0752  PKT rssi=-44 : 52 b1 5a db d1 3c 8e c3 85 6d ff 00 90 02 00 2c 03 80 ad a5 55 2b 15 ad bf ed ca cc b0 8b f4 08
+    7.0938  HB  total=125 (+1/s) strong=13 (+1) last_rssi=-44
+    8.1014  HB  total=125 (+0/s) strong=13 (+0) last_rssi=-44
+    9.1065  HB  total=128 (+3/s) strong=13 (+0) last_rssi=-44
+    9.3074  PKT rssi=-49 : 54 ac 56 b6 f7 d7 2b 12 65 7f 82 48 21 89 1c 44 58 20 00 52 41 01 80 8c 00 0c 00 82 08 00 12 08
+    9.9110  PKT rssi=-46 : 55 2b 15 ad be e3 c8 ec 98 95 bf ee 9b 02 08 8d 04 06 39 56 8a aa 56 2b 5b 7a 9b 95 89 20 7f c0
+    9.9110  HB  total=131 (+3/s) strong=15 (+2) last_rssi=-46
+   10.9220  HB  total=132 (+1/s) strong=15 (+0) last_rssi=-46
+   11.5271  PKT rssi=-44 : 52 b1 5a db f5 3c 8e c9 d5 5e be ab 40 92 40 00 c0 00 95 a8 aa a5 62 b5 b7 83 b9 59 90 09 7c 18
+   11.9300  HB  total=133 (+1/s) strong=16 (+1) last_rssi=-44
+   12.9670  HB  total=134 (+1/s) strong=16 (+0) last_rssi=-44
+   13.7728  PKT rssi=-50 : 52 b1 5a db c9 dc ac 48 a7 fe c2 33 03 b5 70 08 00 20 00 04 0c 81 76 0e af 00 40 21 40 98 34 f8
+   13.9553  HB  total=136 (+2/s) strong=17 (+1) last_rssi=-50
+   13.9553  PKT rssi=-60 : 5d 55 7d 57 5d 55 75 75 55 7d 5f d7 55 55 55 7f d5 55 55 d7 d5 7f fd 55 f5 fd 55 d5 55 d5 55 75
+   14.0581  PKT rssi=-58 : 55 55 55 f5 75 55 75 5f 55 75 55 5f 55 55 7f d7 ff 5f 5f 5d 5f 55 55 55 5f 57 d5 55 55 55 75 5f
+   14.0581  PKT rssi=-59 : 10 44 05 15 01 55 50 05 45 50 45 04 45 10 01 41 00 51 05 14 55 54 14 11 44 10 04 44 00 41 15 44
+   14.0581  PKT rssi=-62 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   14.2690  PKT rssi=-60 : 55 55 55 75 7d f5 57 d7 dd 57 d5 d5 75 55 75 57 55 55 dd 57 5f 57 ff 75 5d df f5 df 5d 55 75 57
+   15.0749  HB  total=146 (+10/s) strong=22 (+5) last_rssi=-60
+   15.8807  PKT rssi=-51 : 52 b1 5a db ff 5c ac cb 16 be 01 08 89 d0 11 00 76 8b 04 00 e0 21 50 e6 a8 14 22 48 02 02 1b 22
+   16.0821  HB  total=148 (+2/s) strong=23 (+1) last_rssi=-51
+   17.1014  HB  total=150 (+2/s) strong=23 (+0) last_rssi=-51
+   17.5175  PKT rssi=-45 : 4a c5 6b 6f 62 f2 3b 2c ed 77 fc 14 23 aa 20 b2 ac 81 6a a2 aa 95 8a d6 df 9e e5 62 5f 7f fa 04
+   17.7191  PKT rssi=-44 : 4a c5 6b 6f a4 f2 3b 15 95 c2 fa 20 02 2c 0e 78 b9 23 fb 15 54 ac 56 b6 f4 b7 2b 12 5e ff cc 18
+   18.1212  HB  total=153 (+3/s) strong=25 (+2) last_rssi=-44
+   18.7373  PKT rssi=-51 : 4a c5 6b 6f 0b 72 b3 20 e2 f8 18 01 06 08 48 08 10 0a 38 28 02 31 b1 39 75 00 04 42 66 02 09 d0
+   18.9389  HB  total=158 (+5/s) strong=26 (+1) last_rssi=-51
+   19.7465  PKT rssi=-51 : 52 b1 5a db fb 5c ac 4b 45 fe 00 01 02 22 0c e2 00 90 54 22 04 14 8d 40 ce 3a 13 a6 38 09 01 12
+   19.9478  HB  total=160 (+2/s) strong=27 (+1) last_rssi=-51
+   20.9559  HB  total=161 (+1/s) strong=27 (+0) last_rssi=-51
+   21.7636  PKT rssi=-44 : 52 b1 5a db f0 3c 8e 41 92 6e bf 64 0c 40 52 24 2d 61 4b 54 55 52 b1 5a db c7 5c ac 48 75 fe 88
+   21.9650  HB  total=164 (+3/s) strong=28 (+1) last_rssi=-44
+   22.1661  PKT rssi=-43 : 4a c5 6b 6f 01 72 b3 20 6a fa 06 02 5a 54 2a e5 22 d5 15 54 ac 56 b6 fb d7 2b 12 95 7f d5 51 5c
+   22.9706  HB  total=167 (+3/s) strong=29 (+1) last_rssi=-43
+   23.1719  PKT rssi=-50 : 52 b1 5a db f4 dc ac cb 80 bf 41 09 18 54 e0 00 00 ac a8 a9 e0 82 81 88 01 a2 08 44 d1 a4 98 41
+   23.5745  PKT rssi=-49 : 55 4a c5 6b 6f f1 72 b3 2c aa fc 0a 01 45 0a a2 17 58 a2 84 05 5a b2 10 28 12 25 24 20 40 0e 9a
+   23.9789  HB  total=172 (+5/s) strong=31 (+2) last_rssi=-49
+   24.3954  PKT rssi=-51 : 52 b1 5a db ce dc ac c8 c8 be 00 44 21 10 18 0a 00 c3 01 40 88 22 00 14 42 87 11 19 24 a3 e2 c1
+   24.5973  PKT rssi=-51 : 52 b1 5a db f0 dc ac 4b d3 ff 4a 48 44 94 2c 08 89 00 b0 41 88 18 82 44 2b 07 41 c8 08 28 14 80
+   25.0023  HB  total=175 (+3/s) strong=33 (+2) last_rssi=-51

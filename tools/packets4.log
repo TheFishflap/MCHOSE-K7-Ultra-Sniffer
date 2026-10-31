@@ -1,0 +1,52 @@
+# capture start 2026-10-31 22:31:18 port COM5 dauer 20s
+    0.0015  *** Booting nRF Connect SDK v3.4.1-b20f8619ba9a ***
+    0.0015  *** Using Zephyr OS v4.4.2-33fa6a7aac6a ***
+    0.0015  mouse-sniffer: Paket-Empfaenger (Iteration 4)
+    0.0015  Kanal 50 = 2450 MHz, 2MBIT, CRC aus, STATLEN 32
+    0.0015  Druckfilter: nur RSSI >= -70 dBm (Rauschen ausgeblendet)
+    0.0015  HB=Heartbeat  PKT=starkes Paket (hex)
+    0.0015  HB  total=0 (+0) strong=0 (+0) last_strong_rssi=0
+    0.0015  PKT rssi=-54 : 45 55 2b 15 ad be dd ca c4 a7 7f e8 1a 2a 84 52 06 29 38 4b 12 ad 0c 10 68 9a 94 a1 54 a4 33 91
+    0.0015  HB  total=3 (+3) strong=1 (+1) last_strong_rssi=-54
+    0.0020  HB  total=6 (+3) strong=1 (+0) last_strong_rssi=-54
+    0.0020  HB  total=8 (+2) strong=1 (+0) last_strong_rssi=-54
+    0.0020  HB  total=10 (+2) strong=1 (+0) last_strong_rssi=-54
+    0.0020  HB  total=10 (+0) strong=1 (+0) last_strong_rssi=-54
+    0.0025  PKT rssi=-60 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.0025  PKT rssi=-62 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.0025  HB  total=21 (+11) strong=7 (+6) last_strong_rssi=-63
+    0.2170  HB  total=21 (+0) strong=7 (+0) last_strong_rssi=-63
+    0.2170  HB  total=23 (+2) strong=7 (+0) last_strong_rssi=-63
+    1.2346  HB  total=25 (+2) strong=7 (+0) last_strong_rssi=-63
+    2.2402  HB  total=26 (+1) strong=7 (+0) last_strong_rssi=-63
+    3.2603  HB  total=28 (+2) strong=7 (+0) last_strong_rssi=-63
+    4.2664  HB  total=37 (+9) strong=7 (+0) last_strong_rssi=-63
+    4.8709  PKT rssi=-54 : 52 b1 5a db dd dc ac 49 b7 fe 80 08 21 30 11 30 06 c8 2e 31 00 02 b8 3c 41 21 48 c0 08 44 76 81
+    5.2748  HB  total=38 (+1) strong=8 (+1) last_strong_rssi=-54
+    6.2796  HB  total=41 (+3) strong=8 (+0) last_strong_rssi=-54
+    6.6962  PKT rssi=-52 : 6a aa d9 ad 6d f5 ae b6 ed 07 5f 5a 08 02 03 04 90 81 11 13 20 04 08 f8 01 88 18 8a 28 40 f5 46
+    6.8973  PKT rssi=-53 : 52 b1 5a db ec dc ac ca 60 be 80 b9 02 99 23 0a 84 1a 08 05 20 50 24 16 26 28 44 2f 02 b0 88 14
+    7.3135  HB  total=43 (+2) strong=10 (+2) last_strong_rssi=-53
+    8.3228  HB  total=44 (+1) strong=10 (+0) last_strong_rssi=-53
+    9.3337  HB  total=44 (+0) strong=10 (+0) last_strong_rssi=-53
+    9.9360  PKT rssi=-38 : 55 2b 15 ad bd 0f cb ef 14 ac 0a 94 0e 00 04 11 84 94 0c 2b b4 55 52 b1 5a db f1 5c ac 4b cd ff
+   10.3382  HB  total=46 (+2) strong=11 (+1) last_strong_rssi=-38
+   10.5406  PKT rssi=-52 : 52 b1 5a db ce 5c ac 48 c1 ff 20 80 22 12 44 b0 80 14 05 f0 40 80 42 85 62 c5 28 92 82 40 5a 88
+   11.3455  HB  total=47 (+1) strong=12 (+1) last_strong_rssi=-52
+   11.3455  PKT rssi=-51 : 4a c5 6b 6f 9b 72 b3 2b a2 fc 49 00 80 27 01 05 08 93 1a 86 00 00 01 02 21 02 0c 81 58 16 08 92
+   11.5468  PKT rssi=-48 : 52 b1 5a db e8 dc ac 4a 33 fe 28 00 a8 48 02 11 0a 56 d4 55 52 b1 5a db d9 5c ac 49 ed fe 83 c5
+   12.3789  HB  total=49 (+2) strong=14 (+2) last_strong_rssi=-48
+   13.4012  HB  total=51 (+2) strong=14 (+0) last_strong_rssi=-48
+   14.0068  PKT rssi=-47 : 4a c5 6b 6f f6 f2 3a 1d fb ea fc 12 18 ac 22 86 00 05 6a 95 54 ac 56 b6 f1 37 2b 32 10 2f a0 a8
+   14.4108  HB  total=56 (+5) strong=16 (+2) last_strong_rssi=-52
+   14.8263  PKT rssi=-52 : 52 b1 5a db db 5c ac c9 c6 be a8 08 05 80 89 62 06 08 00 00 06 20 40 98 21 10 80 ae 1a 04 03 55
+   15.0269  PKT rssi=-52 : 4a aa 56 2b 5b 7d cb 95 99 48 57 d4 82 50 08 20 24 00 0c d5 62 8b 49 02 c9 18 02 31 44 24 30 44
+   15.2296  HB  total=61 (+5) strong=18 (+2) last_strong_rssi=-52
+   15.6350  PKT rssi=-50 : 2a a9 58 ad 6d e9 2e 56 64 b9 5f 43 61 10 88 44 0c 20 49 02 05 22 50 25 02 44 54 08 1e 4a 42 01
+   16.2385  HB  total=64 (+3) strong=19 (+1) last_strong_rssi=-50
+   17.2599  HB  total=65 (+1) strong=19 (+0) last_strong_rssi=-50
+   18.3076  HB  total=67 (+2) strong=19 (+0) last_strong_rssi=-50
+   18.5094  PKT rssi=-53 : 4a c5 6b 6f 91 72 b3 2b 2a fc 00 40 08 00 00 a0 80 24 12 80 66 40 14 a2 13 12 0a 51 04 10 28 41
+   18.9106  PKT rssi=-60 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   19.1125  PKT rssi=-61 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   19.3136  HB  total=81 (+14) strong=26 (+7) last_strong_rssi=-62

@@ -1,0 +1,68 @@
+# capture start 2026-10-31 22:54:02 port COM8 dauer 24s
+    0.3949  END bewegen!
+    0.3949  HB  cfg=o8-4pfx    hits=0 last_rssi=0
+    0.3949  CFG o8-4pfx    -> hits=0 last_rssi=0
+    0.3949  HB  cfg=o8-4base   hits=0 last_rssi=0
+    0.3949  HB  cfg=o8-4base   hits=0 last_rssi=0
+    0.3949  CFG o8-4base   -> hits=0 last_rssi=0
+    0.3949  HB  cfg=o10-4pfx   hits=0 last_rssi=0
+    0.3954  CFG o10-4pfx   -> hits=0 last_rssi=0
+    0.3954  HB  cfg=o10-4base  hits=0 last_rssi=0
+    0.3954  HB  cfg=o10-4base  hits=0 last_rssi=0
+    0.3954  CFG o10-4base  -> hits=0 last_rssi=0
+    0.3954  HB  cfg=o8-3pfx    hits=0 last_rssi=0
+    0.4022  PKT o8-3pfx    rssi=-97 : 12 d0 45 59 45 66 bd ad dd 12 9d 8b 14 f2 6e 2e 57 2c 55 7a
+    0.4022  CFG o8-3pfx    -> hits=1 last_rssi=-97
+    0.4022  HB  cfg=o8-3base   hits=0 last_rssi=-97
+    0.4022  HB  cfg=o8-3base   hits=0 last_rssi=-97
+    0.4022  CFG o8-3base   -> hits=0 last_rssi=-97
+    0.4022  HB  cfg=o8-4pfx    hits=0 last_rssi=-97
+    0.4022  CFG o8-4pfx    -> hits=0 last_rssi=-97
+    0.4022  HB  cfg=o8-4base   hits=0 last_rssi=-97
+    0.4022  HB  cfg=o8-4base   hits=0 last_rssi=-97
+    0.4022  CFG o8-4base   -> hits=0 last_rssi=-97
+    0.4022  HB CFG o10-4pfx   -> hits=0 last_rssi=-97
+    0.4022  HB  cfg=o10-4base  hits=0 last_rssi=-97
+    0.4022  HB  cfg=o10-4base  hits=0 last_rssi=-97
+    0.6073  CFG o10-4base  -> hits=0 last_rssi=-97
+    0.6078  HB  cfg=o8-3pfx    hits=0 lastHB  cfg=o10-4base  hits=0 last_rssi=-97
+    1.0096  CFG o10-4base  -> hits=0 last_rssi=-97
+    1.4111  HB  cfg=o8-3pfx    hits=0 last_rssi=-97
+    2.4597  CFG o8-3pfx    -> hits=0 last_rssi=-97
+    2.4597  HB  cfg=o8-3base   hits=0 last_rssi=-97
+    3.5237  HB  cfg=o8-3base   hits=0 last_rssi=-97
+    3.7390  PKT o8-3base   rssi=-95 : 39 dd 43 f0 7e bb c0 96 f8 c6 b6 9a f9 49 b4 79 e6 75 af 7c
+    3.9409  CFG o8-3base   -> hits=1 last_rssi=-95
+    4.5458  HB  cfg=o8-4pfx    hits=0 last_rssi=-95
+    5.3517  CFG o8-4pfx    -> hits=0 last_rssi=-95
+    5.5547  HB  cfg=o8-4base   hits=0 last_rssi=-95
+    6.5609  HB  cfg=o8-4base   hits=0 last_rssi=-95
+    6.9629  CFG o8-4base   -> hits=0 last_rssi=-95
+    7.5828  HB  cfg=o10-4pfx   hits=0 last_rssi=-95
+    8.3918  CFG o10-4pfx   -> hits=0 last_rssi=-95
+    8.5924  HB  cfg=o10-4base  hits=0 last_rssi=-95
+    9.6026  HB  cfg=o10-4base  hits=0 last_rssi=-95
+   10.0060  CFG o10-4base  -> hits=0 last_rssi=-95
+   10.6122  HB  cfg=o8-3pfx    hits=0 last_rssi=-95
+   11.4191  CFG o8-3pfx    -> hits=0 last_rssi=-95
+   11.6202  HB  cfg=o8-3base   hits=0 last_rssi=-95
+   12.6311  HB  cfg=o8-3base   hits=0 last_rssi=-95
+   13.0346  CFG o8-3base   -> hits=0 last_rssi=-95
+   13.6392  HB  cfg=o8-4pfx    hits=0 last_rssi=-95
+   14.4453  CFG o8-4pfx    -> hits=0 last_rssi=-95
+   14.6468  HB  cfg=o8-4base   hits=0 last_rssi=-95
+   15.6838  HB  cfg=o8-4base   hits=0 last_rssi=-95
+   16.0861  CFG o8-4base   -> hits=0 last_rssi=-95
+   16.6898  HB  cfg=o10-4pfx   hits=0 last_rssi=-95
+   17.4936  CFG o10-4pfx   -> hits=0 last_rssi=-95
+   17.6948  HB  cfg=o10-4base  hits=0 last_rssi=-95
+   18.7026  HB  cfg=o10-4base  hits=0 last_rssi=-95
+   19.1049  CFG o10-4base  -> hits=0 last_rssi=-95
+   19.7239  HB  cfg=o8-3pfx    hits=0 last_rssi=-95
+   20.5300  CFG o8-3pfx    -> hits=0 last_rssi=-95
+   20.7320  HB  cfg=o8-3base   hits=0 last_rssi=-95
+   21.7395  HB  cfg=o8-3base   hits=0 last_rssi=-95
+   21.9411  CFG o8-3base   -> hits=0 last_rssi=-95
+   22.5606  HB  cfg=o8-4pfx    hits=0 last_rssi=-95
+   23.5823  CFG o8-4pfx    -> hits=0 last_rssi=-95
+   23.5823  HB  cfg=o8-4base   hits=0 last_rssi=-95

@@ -1,0 +1,33 @@
+# capture start 2026-10-31 22:46:15 port COM5 dauer 25s
+    1.0218  HB  total=24 (+0/s) strong=0 (+0) last_rssi=0
+    2.0404  HB  total=30 (+6/s) strong=0 (+0) last_rssi=0
+    3.0588  HB  total=32 (+2/s) strong=0 (+0) last_rssi=0
+    4.1047  HB  total=33 (+1/s) strong=0 (+0) last_rssi=0
+    5.1511  HB  total=35 (+2/s) strong=0 (+0) last_rssi=0
+    5.9686  HB  total=35 (+0/s) strong=0 (+0) last_rssi=0
+    6.9879  HB  total=38 (+3/s) strong=0 (+0) last_rssi=0
+    8.0355  HB  total=40 (+2/s) strong=0 (+0) last_rssi=0
+    9.0689  HB  total=42 (+2/s) strong=0 (+0) last_rssi=0
+    9.8547  PKT rssi=-56 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    9.8547  PKT rssi=-56 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    9.9426  PKT rssi=-55 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    9.9426  PKT rssi=-54 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   10.0416  PKT rssi=-57 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   10.0416  HB  total=51 (+9/s) strong=5 (+5) last_rssi=-57
+   10.0416  PKT rssi=-68 : 57 75 55 15 55 55 5d 54 4d 3d 55 d5 55 55 55 75 55 55 55 55 d5 35 d5 56 55 5d 45 5c 55 55 55 55
+   10.2559  PKT rssi=-68 : 75 55 55 55 5d 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   11.1032  HB  total=55 (+4/s) strong=7 (+2) last_rssi=-68
+   12.1220  HB  total=58 (+3/s) strong=7 (+0) last_rssi=-68
+   13.1556  HB  total=58 (+0/s) strong=7 (+0) last_rssi=-68
+   14.0170  HB  total=61 (+3/s) strong=7 (+0) last_rssi=-68
+   15.0644  HB  total=63 (+2/s) strong=7 (+0) last_rssi=-68
+   16.0847  HB  total=64 (+1/s) strong=7 (+0) last_rssi=-68
+   17.1168  HB  total=68 (+4/s) strong=7 (+0) last_rssi=-68
+   18.1348  HB  total=70 (+2/s) strong=7 (+0) last_rssi=-68
+   19.1808  HB  total=72 (+2/s) strong=7 (+0) last_rssi=-68
+   19.9987  HB  total=74 (+2/s) strong=7 (+0) last_rssi=-68
+   21.0183  HB  total=75 (+1/s) strong=7 (+0) last_rssi=-68
+   22.0520  HB  total=76 (+1/s) strong=7 (+0) last_rssi=-68
+   23.0861  HB  total=80 (+4/s) strong=7 (+0) last_rssi=-68
+   24.1176  HB  total=80 (+0/s) strong=7 (+0) last_rssi=-68
+   25.1372  HB  total=80 (+0/s) strong=7 (+0) last_rssi=-68

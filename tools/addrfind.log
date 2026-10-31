@@ -1,0 +1,52 @@
+# capture start 2026-10-31 22:38:08 port COM5 dauer 18s
+    0.0015  *** Booting nRF Connect SDK v3.4.1-b20f8619ba9a ***
+    0.0015  *** Using Zephyr OS v4.4.2-33fa6a7aac6a ***
+    0.0015  mouse-sniffer: Adress-Arrangement-Finder (Iteration 6)
+    0.0015  Probiere 5 Anordnungen fuer On-Air 52 b1 5a db durch.
+    0.0015  Maus bewegen! HB zeigt pro Konfig die Treffer.
+    0.0015  HB  cfg=A pfx52/BE hits=0 last_rssi=0
+    0.0015  CFG A pfx52/BE -> hits=0 last_rssi=0
+    0.0015  HB  cfg=B pfxDB/BE hits=0 last_rssi=0
+    0.0015  HB  cfg=B pfxDB/BE hits=0 last_rssi=0
+    0.0015  CFG B pfxDB/BE -> hits=0 last_rssi=0
+    0.0015  HB  cfg=C pfx52/LE hits=0 last_rssi=0
+    0.0015  CFG C pfx52/LE -> hits=0 last_rssi=0
+    0.0015  HB  cfg=D pfxDB/LE hits=0 last_rssi=0
+    0.0015  HB  cfg=D pfxDB/LE hits=0 last_rssi=0
+    0.0015  CFG D pfxDB/LE -> hits=0 last_rssi=0
+    0.0015  HB  cfg=E 3byte hits=0 last_rssi=0
+    0.0015  CFG E 3byte -> hits=0 last_rssi=0
+    0.0015  HB  cfg=A pfx52/BE hits=0 last_rssi=0
+    0.2077  HB  cfg=A pfx52/BE hits=0 last_rssi=0
+    0.2077  CFG A pfx52/BE -> hits=0 last_rssi=0
+    0.6097  HB  cfg=B pfxDB/BE hits=0 last_rssi=0
+    1.4161  CFG B pfxDB/BE -> hits=0 last_rssi=0
+    1.6162  HB  cfg=C pfx52/LE hits=0 last_rssi=0
+    2.4361  HB  cfg=C pfx52/LE hits=0 last_rssi=0
+    3.0684  CFG C pfx52/LE -> hits=0 last_rssi=0
+    3.4844  HB  cfg=D pfxDB/LE hits=0 last_rssi=0
+    4.5184  CFG D pfxDB/LE -> hits=0 last_rssi=0
+    4.5184  HB  cfg=E 3byte hits=0 last_rssi=0
+    5.5377  HB  cfg=E 3byte hits=0 last_rssi=0
+    5.9546  CFG E 3byte -> hits=0 last_rssi=0
+    6.5857  HB  cfg=A pfx52/BE hits=0 last_rssi=0
+    7.6079  CFG A pfx52/BE -> hits=0 last_rssi=0
+    7.6079  HB  cfg=B pfxDB/BE hits=0 last_rssi=0
+    8.6139  HB  cfg=B pfxDB/BE hits=0 last_rssi=0
+    9.0168  CFG B pfxDB/BE -> hits=0 last_rssi=0
+    9.6210  HB  cfg=C pfx52/LE hits=0 last_rssi=0
+   10.4374  CFG C pfx52/LE -> hits=0 last_rssi=0
+   10.6397  HB  cfg=D pfxDB/LE hits=0 last_rssi=0
+   11.6460  HB  cfg=D pfxDB/LE hits=0 last_rssi=0
+   12.0495  CFG D pfxDB/LE -> hits=0 last_rssi=0
+   12.6533  HB  cfg=E 3byte hits=0 last_rssi=0
+   12.8559  PKT E 3byte rssi=-95 : 3e 12 54 cc 78 52 ab 66 13 7f f5 ff df df ff ff fb f7 fb df
+   13.4608  CFG E 3byte -> hits=1 last_rssi=-95
+   13.6620  HB  cfg=A pfx52/BE hits=0 last_rssi=-95
+   14.6806  HB  cfg=A pfx52/BE hits=0 last_rssi=-95
+   15.1113  CFG A pfx52/BE -> hits=0 last_rssi=-95
+   15.5273  HB  cfg=B pfxDB/BE hits=0 last_rssi=-95
+   16.5599  CFG B pfxDB/BE -> hits=0 last_rssi=-95
+   16.5599  HB  cfg=C pfx52/LE hits=0 last_rssi=-95
+   17.5670  HB  cfg=C pfx52/LE hits=0 last_rssi=-95
+   17.9710  CFG C pfx52/LE -> hits=0 last_rssi=-95

@@ -1,0 +1,95 @@
+/*
+ * mouse-sniffer - Board 1: 2.4 GHz Kanalscanner
+ *
+ * Durchlaeuft 2400-2479 MHz in 1-MHz-Schritten und misst das RSSI pro
+ * Kanal direkt ueber das RADIO-Peripheral (kein Bluetooth-Stack, kein
+ * Zephyr-Funktreiber dazwischen). Ziel: herausfinden, auf welchen
+ * Kanaelen die MCHOSE K7 Ultra bei Mausbewegung aktiv wird, als
+ * Vorstufe fuer einen echten Promiscuous-Sniffer.
+ *
+ * Status: erster Entwurf, noch nicht auf echter Hardware getestet.
+ */
+
+#include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
+#include <hal/nrf_radio.h>
+
+/* 2400 MHz (Kanal 0) bis 2479 MHz (Kanal 79) deckt praktisch den
+ * gesamten 2.4-GHz-ISM-Bereich ab, in dem die Maus senden duerfte. */
+#define SCAN_CH_FIRST 0
+#define SCAN_CH_LAST  79
+
+/* Ab welchem RSSI (in dBm, negativ) wird ein Kanal als "aktiv"
+ * geloggt. Muss nach den ersten Testlaeufen ggf. angepasst werden -
+ * der Raumpegel durch WLAN/BLE in der Umgebung ist ein guter
+ * Ausgangspunkt fuer die Kalibrierung. */
+#define RSSI_THRESHOLD_DBM (-75)
+
+static void radio_init(void)
+{
+	nrf_radio_power_set(NRF_RADIO, true);
+
+	/* BLE 1 MBit als Startpunkt - reine Vermutung zur Modulation der
+	 * Maus, muss ggf. korrigiert werden (z.B. Nordic proprietary
+	 * 2 MBit), sobald echte Pakete statt nur RSSI ausgewertet werden. */
+	nrf_radio_mode_set(NRF_RADIO, NRF_RADIO_MODE_BLE_1MBIT);
+	nrf_radio_txpower_set(NRF_RADIO, NRF_RADIO_TXPOWER_0DBM);
+}
+
+/* Schaltet den Empfaenger auf den angegebenen Kanal, nimmt eine
+ * RSSI-Messung und legt den Empfaenger danach wieder still. */
+static int16_t measure_rssi(uint8_t channel)
+{
+	nrf_radio_frequency_set(NRF_RADIO, 2400 + channel);
+
+	nrf_radio_event_clear(NRF_RADIO, NRF_RADIO_EVENT_READY);
+	nrf_radio_task_trigger(NRF_RADIO, NRF_RADIO_TASK_RXEN);
+	while (!nrf_radio_event_check(NRF_RADIO, NRF_RADIO_EVENT_READY)) {
+		k_busy_wait(1);
+	}
+
+	nrf_radio_event_clear(NRF_RADIO, NRF_RADIO_EVENT_RSSIEND);
+	nrf_radio_task_trigger(NRF_RADIO, NRF_RADIO_TASK_RSSISTART);
+	while (!nrf_radio_event_check(NRF_RADIO, NRF_RADIO_EVENT_RSSIEND)) {
+		k_busy_wait(1);
+	}
+
+	uint8_t rssi_sample = nrf_radio_rssi_sample_get(NRF_RADIO);
+
+	nrf_radio_task_trigger(NRF_RADIO, NRF_RADIO_TASK_DISABLE);
+	while (nrf_radio_state_get(NRF_RADIO) != NRF_RADIO_STATE_DISABLED) {
+		k_busy_wait(1);
+	}
+
+	/* RSSISAMPLE ist der Betrag des dBm-Werts (0 = 0 dBm, 40 = -40 dBm). */
+	return -(int16_t)rssi_sample;
+}
+
+int main(void)
+{
+	printk("\nmouse-sniffer: 2.4 GHz Kanalscanner\n");
+	printk("Board: Seeed XIAO nRF52840 Plus\n");
+	printk("Scan: Kanal %d-%d (%d-%d MHz), Schwellwert %d dBm\n\n",
+	       SCAN_CH_FIRST, SCAN_CH_LAST,
+	       2400 + SCAN_CH_FIRST, 2400 + SCAN_CH_LAST,
+	       RSSI_THRESHOLD_DBM);
+
+	radio_init();
+
+	while (1) {
+		printk("--- Scan-Durchlauf ---\n");
+
+		for (uint8_t ch = SCAN_CH_FIRST; ch <= SCAN_CH_LAST; ch++) {
+			int16_t rssi = measure_rssi(ch);
+
+			if (rssi > RSSI_THRESHOLD_DBM) {
+				printk("  CH%2u (%4u MHz): %d dBm  <-- Aktivitaet\n",
+				       ch, 2400 + ch, rssi);
+			}
+		}
+
+		k_msleep(500);
+	}
+
+	return 0;
+}

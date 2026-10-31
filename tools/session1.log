@@ -1,0 +1,109 @@
+# capture start 2026-10-31 22:09:18 port COM5 dauer 45s
+    3.2626  [00:00:00.302,856] [0m<inf> udc_nrf: Preinit[0m
+    3.2626  *** Booting nRF Connect SDK v3.4.1-b20f8619ba9a ***
+    3.2626  *** Using Zephyr OS v4.4.2-33fa6a7aac6a ***
+    3.2626  [00:00:00.303,161] [0m<inf> udc_nrf: Initialized[0m
+    3.2626  mouse-sniffer: 2.4 GHz Kanalscanner
+    3.2631  Board: Seeed XIAO nRF52840 Plus
+    3.2631  Scan: Kanal 0-79 (2400-2479 MHz), Schwellwert -75 dBm
+    3.2631  --- Scan-Durchlauf ---
+    3.2631  [00:00:00.307,403] [0m<inf> udc_nrf: SUSPEND state detected[0m
+    3.2631  [00:00:00.405,578] [0m<inf> udc_nrf: Reset[0m
+    3.2631  [00:00:00.405,639] [0m<inf> udc_nrf: RESUMING from suspend[0m
+    3.2631  [00:00:00.494,323] [0m<inf> udc_nrf: Reset[0m
+    3.2631  [00:00:00.646,728] [1;31m<err> udc: Failed to allocate net_buf 4095, ep 0x80[0m
+    3.2631  [00:00:00.658,630] [1;31m<err> udc: Failed to allocate net_buf 4095, ep 0x80[0m
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    3.4727  --- Scan-Durchlauf ---
+    4.5049  --- Scan-Durchlauf ---
+    4.5049  --- Scan-Durchlauf ---
+    5.5540  --- Scan-Durchlauf ---
+    5.5540  --- Scan-Durchlauf ---
+    6.4012  --- Scan-Durchlauf ---
+    6.4012  --- Scan-Durchlauf ---
+    7.4199  --- Scan-Durchlauf ---
+    7.4199  --- Scan-Durchlauf ---
+    8.4385  --- Scan-Durchlauf ---
+    8.4385  --- Scan-Durchlauf ---
+    9.4865  --- Scan-Durchlauf ---
+    9.4865  --- Scan-Durchlauf ---
+   10.5348  --- Scan-Durchlauf ---
+   10.5348  --- Scan-Durchlauf ---
+   11.5803  --- Scan-Durchlauf ---
+   11.5803  --- Scan-Durchlauf ---
+   12.6000  --- Scan-Durchlauf ---
+   12.6000  --- Scan-Durchlauf ---
+   13.6621  --- Scan-Durchlauf ---
+   13.6621  --- Scan-Durchlauf ---
+   14.7088  --- Scan-Durchlauf ---
+   14.7088  --- Scan-Durchlauf ---
+   15.7553  --- Scan-Durchlauf ---
+   15.7553  --- Scan-Durchlauf ---
+   16.6163  --- Scan-Durchlauf ---
+   16.6163  --- Scan-Durchlauf ---
+   17.6780  --- Scan-Durchlauf ---
+   17.6780  --- Scan-Durchlauf ---
+   18.7259  --- Scan-Durchlauf ---
+   18.7259  --- Scan-Durchlauf ---
+   19.7582  --- Scan-Durchlauf ---
+   19.7582  --- Scan-Durchlauf ---
+   20.7766  --- Scan-Durchlauf ---
+   20.7766  --- Scan-Durchlauf ---
+   21.8261  --- Scan-Durchlauf ---
+   21.8261  --- Scan-Durchlauf ---
+   22.8308  --- Scan-Durchlauf ---
+   22.8308  --- Scan-Durchlauf ---
+   23.8944  --- Scan-Durchlauf ---
+   23.8944  --- Scan-Durchlauf ---
+   24.8991  --- Scan-Durchlauf ---
+   24.8991  --- Scan-Durchlauf ---
+   25.9196  --- Scan-Durchlauf ---
+   25.9196  --- Scan-Durchlauf ---
+   26.9285  --- Scan-Durchlauf ---
+   26.9285  --- Scan-Durchlauf ---
+   27.9505  --- Scan-Durchlauf ---
+   27.9505    CH50 (2450 MHz): -51 dBm  <-- Aktivitaet
+   27.9505  --- Scan-Durchlauf ---
+   28.9611  --- Scan-Durchlauf ---
+   28.9611    CH51 (2451 MHz): -64 dBm  <-- Aktivitaet
+   28.9611  --- Scan-Durchlauf ---
+   29.9686  --- Scan-Durchlauf ---
+   29.9686  --- Scan-Durchlauf ---
+   29.9686    CH49 (2449 MHz): -68 dBm  <-- Aktivitaet
+   30.9914  --- Scan-Durchlauf ---
+   30.9914  --- Scan-Durchlauf ---
+   30.9914    CH50 (2450 MHz): -55 dBm  <-- Aktivitaet
+   32.0004  --- Scan-Durchlauf ---
+   32.0004  --- Scan-Durchlauf ---
+   32.0004    CH51 (2451 MHz): -64 dBm  <-- Aktivitaet
+   33.0073  --- Scan-Durchlauf ---
+   33.0073  --- Scan-Durchlauf ---
+   34.0200  --- Scan-Durchlauf ---
+   34.0200  --- Scan-Durchlauf ---
+   35.0290  --- Scan-Durchlauf ---
+   35.0290    CH50 (2450 MHz): -59 dBm  <-- Aktivitaet
+   35.0290  --- Scan-Durchlauf ---
+   36.0370  --- Scan-Durchlauf ---
+   36.0370    CH51 (2451 MHz): -58 dBm  <-- Aktivitaet
+   36.0370  --- Scan-Durchlauf ---
+   37.0707  --- Scan-Durchlauf ---
+   37.0707  --- Scan-Durchlauf ---
+   38.1177  --- Scan-Durchlauf ---
+   38.1177  --- Scan-Durchlauf ---
+   39.1506  --- Scan-Durchlauf ---
+   39.1506  --- Scan-Durchlauf ---
+   40.1845  --- Scan-Durchlauf ---
+   40.1845  --- Scan-Durchlauf ---
+   41.2322  --- Scan-Durchlauf ---
+   41.2322  --- Scan-Durchlauf ---
+   42.2508  --- Scan-Durchlauf ---
+   42.2508  --- Scan-Durchlauf ---
+   43.2826  --- Scan-Durchlauf ---
+   43.2826  --- Scan-Durchlauf ---
+   44.2851  --- Scan-Durchlauf ---
+   44.2851  --- Scan-Durchlauf ---

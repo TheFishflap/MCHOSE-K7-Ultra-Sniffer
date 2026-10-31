@@ -1,0 +1,216 @@
+# guided 2026-10-31 22:15:26 port COM5
+1793481329.436  [00:00:00.297,729] [0m<inf> udc_nrf: Preinit[0m
+1793481329.436  *** Booting nRF Connect SDK v3.4.1-b20f8619ba9a ***
+1793481329.436  *** Using Zephyr OS v4.4.2-33fa6a7aac6a ***
+1793481329.436  [00:00:00.298,034] [0m<inf> udc_nrf: Initialized[0m
+1793481329.436  mouse-sniffer: 2.4 GHz Kanalscanner
+1793481329.436  Board: Seeed XIAO nRF52840 Plus
+1793481329.436  Scan: Kanal 0-79 (2400-2479 MHz), Schwellwert -75 dBm
+1793481329.436  --- Scan-Durchlauf ---
+1793481329.436  [00:00:00.302,276] [0m<inf> udc_nrf: SUSPEND state detected[0m
+1793481329.436    CH29 (2429 MHz): -68 dBm  <-- Aktivitaet
+1793481329.443  [00:00:00.400,115] [0m<inf> udc_nrf: Reset[0m
+1793481329.443  [00:00:00.400,177] [0m<inf> udc_nrf: RESUMING from suspend[0m
+1793481329.443  [00:00:00.488,830] [0m<inf> udc_nrf: Reset[0m
+1793481329.443  [00:00:00.638,305] [1;31m<err> udc: Failed to allocate net_buf 4095, ep 0x80[0m
+1793481329.550  [00:00:00.653,900] [1;31m<err> udc: Failed to allocate net_buf 4095, ep 0x80[0m
+1793481329.550  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481329.551  --- Scan-Durchlauf ---
+1793481330.520  --- Scan-Durchlauf ---
+1793481330.520  --- Scan-Durchlauf ---
+1793481331.600  --- Scan-Durchlauf ---
+1793481331.600  --- Scan-Durchlauf ---
+1793481332.573  --- Scan-Durchlauf ---
+1793481332.573  --- Scan-Durchlauf ---
+1793481333.651  --- Scan-Durchlauf ---
+1793481333.651  --- Scan-Durchlauf ---
+1793481334.621  --- Scan-Durchlauf ---
+1793481334.621  --- Scan-Durchlauf ---
+1793481335.700  --- Scan-Durchlauf ---
+1793481335.700  --- Scan-Durchlauf ---
+1793481336.672  --- Scan-Durchlauf ---
+1793481336.672  --- Scan-Durchlauf ---
+1793481337.735  --- Scan-Durchlauf ---
+1793481337.735  --- Scan-Durchlauf ---
+1793481338.703  --- Scan-Durchlauf ---
+1793481338.703  --- Scan-Durchlauf ---
+1793481339.782  --- Scan-Durchlauf ---
+1793481339.782  --- Scan-Durchlauf ---
+1793481340.757  --- Scan-Durchlauf ---
+1793481340.757    CH49 (2449 MHz): -53 dBm  <-- Aktivitaet
+1793481340.757  --- Scan-Durchlauf ---
+1793481341.840  --- Scan-Durchlauf ---
+1793481341.840    CH50 (2450 MHz): -37 dBm  <-- Aktivitaet
+1793481341.840  --- Scan-Durchlauf ---
+1793481342.811  --- Scan-Durchlauf ---
+1793481342.811    CH51 (2451 MHz): -53 dBm  <-- Aktivitaet
+1793481342.811  --- Scan-Durchlauf ---
+1793481343.786  --- Scan-Durchlauf ---
+1793481343.786    CH52 (2452 MHz): -68 dBm  <-- Aktivitaet
+1793481343.786  --- Scan-Durchlauf ---
+1793481344.870  --- Scan-Durchlauf ---
+1793481344.870  --- Scan-Durchlauf ---
+1793481344.870    CH50 (2450 MHz): -38 dBm  <-- Aktivitaet
+1793481345.890  --- Scan-Durchlauf ---
+1793481345.890  --- Scan-Durchlauf ---
+1793481345.890    CH51 (2451 MHz): -52 dBm  <-- Aktivitaet
+1793481346.860  --- Scan-Durchlauf ---
+1793481346.860  --- Scan-Durchlauf ---
+1793481347.938  --- Scan-Durchlauf ---
+1793481347.938  --- Scan-Durchlauf ---
+1793481348.909  --- Scan-Durchlauf ---
+1793481348.909  --- Scan-Durchlauf ---
+1793481349.989  --- Scan-Durchlauf ---
+1793481349.989  --- Scan-Durchlauf ---
+1793481350.960  --- Scan-Durchlauf ---
+1793481350.960  --- Scan-Durchlauf ---
+1793481352.037  --- Scan-Durchlauf ---
+1793481352.037  --- Scan-Durchlauf ---
+1793481353.006  --- Scan-Durchlauf ---
+1793481353.006  --- Scan-Durchlauf ---
+1793481354.177  --- Scan-Durchlauf ---
+1793481354.177  --- Scan-Durchlauf ---
+1793481355.040  --- Scan-Durchlauf ---
+1793481355.040  --- Scan-Durchlauf ---
+1793481356.119  --- Scan-Durchlauf ---
+1793481356.119  --- Scan-Durchlauf ---
+1793481357.093  --- Scan-Durchlauf ---
+1793481357.093  --- Scan-Durchlauf ---
+1793481357.093    CH49 (2449 MHz): -72 dBm  <-- Aktivitaet
+1793481358.174  --- Scan-Durchlauf ---
+1793481358.174  --- Scan-Durchlauf ---
+1793481358.174    CH50 (2450 MHz): -57 dBm  <-- Aktivitaet
+1793481359.146  --- Scan-Durchlauf ---
+1793481359.146  --- Scan-Durchlauf ---
+1793481359.146    CH51 (2451 MHz): -63 dBm  <-- Aktivitaet
+1793481360.117  --- Scan-Durchlauf ---
+1793481360.117    CH58 (2458 MHz): -68 dBm  <-- Aktivitaet
+1793481360.117    CH59 (2459 MHz): -66 dBm  <-- Aktivitaet
+1793481360.117  --- Scan-Durchlauf ---
+1793481361.198  --- Scan-Durchlauf ---
+1793481361.198  --- Scan-Durchlauf ---
+1793481361.198    CH52 (2452 MHz): -66 dBm  <-- Aktivitaet
+1793481362.172  --- Scan-Durchlauf ---
+1793481362.172  --- Scan-Durchlauf ---
+1793481363.187  --- Scan-Durchlauf ---
+1793481363.187  --- Scan-Durchlauf ---
+1793481364.264  --- Scan-Durchlauf ---
+1793481364.264  --- Scan-Durchlauf ---
+1793481365.231  --- Scan-Durchlauf ---
+1793481365.231  --- Scan-Durchlauf ---
+1793481366.309  --- Scan-Durchlauf ---
+1793481366.309  --- Scan-Durchlauf ---
+1793481367.279  --- Scan-Durchlauf ---
+1793481367.279  --- Scan-Durchlauf ---
+1793481368.282  --- Scan-Durchlauf ---
+1793481368.282  --- Scan-Durchlauf ---
+1793481368.282    CH35 (2435 MHz): -69 dBm  <-- Aktivitaet
+1793481368.282    CH36 (2436 MHz): -74 dBm  <-- Aktivitaet
+1793481368.282    CH38 (2438 MHz): -74 dBm  <-- Aktivitaet
+1793481368.282    CH39 (2439 MHz): -73 dBm  <-- Aktivitaet
+1793481368.386    CH40 (2440 MHz): -71 dBm  <-- Aktivitaet
+1793481369.357  --- Scan-Durchlauf ---
+1793481369.357  --- Scan-Durchlauf ---
+1793481370.328  --- Scan-Durchlauf ---
+1793481370.328  --- Scan-Durchlauf ---
+1793481371.392  --- Scan-Durchlauf ---
+1793481371.392  --- Scan-Durchlauf ---
+1793481372.366  --- Scan-Durchlauf ---
+1793481372.366  --- Scan-Durchlauf ---
+1793481373.448  --- Scan-Durchlauf ---
+1793481373.448  --- Scan-Durchlauf ---
+1793481373.448    CH50 (2450 MHz): -58 dBm  <-- Aktivitaet
+1793481374.422  --- Scan-Durchlauf ---
+1793481374.422  --- Scan-Durchlauf ---
+1793481374.422    CH51 (2451 MHz): -53 dBm  <-- Aktivitaet
+1793481375.505  --- Scan-Durchlauf ---
+1793481375.505  --- Scan-Durchlauf ---
+1793481376.475  --- Scan-Durchlauf ---
+1793481376.475    CH49 (2449 MHz): -49 dBm  <-- Aktivitaet
+1793481376.475  --- Scan-Durchlauf ---
+1793481377.556  --- Scan-Durchlauf ---
+1793481377.556    CH50 (2450 MHz): -50 dBm  <-- Aktivitaet
+1793481377.556  --- Scan-Durchlauf ---
+1793481378.531  --- Scan-Durchlauf ---
+1793481378.531    CH51 (2451 MHz): -54 dBm  <-- Aktivitaet
+1793481378.531  --- Scan-Durchlauf ---
+1793481379.547  --- Scan-Durchlauf ---
+1793481379.547    CH52 (2452 MHz): -68 dBm  <-- Aktivitaet
+1793481379.547  --- Scan-Durchlauf ---
+1793481380.629  --- Scan-Durchlauf ---
+1793481380.629  --- Scan-Durchlauf ---
+1793481381.600  --- Scan-Durchlauf ---
+1793481381.600  --- Scan-Durchlauf ---
+1793481382.572  --- Scan-Durchlauf ---
+1793481382.572  --- Scan-Durchlauf ---
+1793481383.650  --- Scan-Durchlauf ---
+1793481383.650  --- Scan-Durchlauf ---
+1793481384.621  --- Scan-Durchlauf ---
+1793481384.621  --- Scan-Durchlauf ---
+1793481385.699  --- Scan-Durchlauf ---
+1793481385.699  --- Scan-Durchlauf ---
+1793481386.670  --- Scan-Durchlauf ---
+1793481386.670  --- Scan-Durchlauf ---
+1793481387.735  --- Scan-Durchlauf ---
+1793481387.735  --- Scan-Durchlauf ---
+1793481388.710  --- Scan-Durchlauf ---
+1793481388.710  --- Scan-Durchlauf ---
+1793481389.795  --- Scan-Durchlauf ---
+1793481389.795  --- Scan-Durchlauf ---
+1793481389.795    CH50 (2450 MHz): -60 dBm  <-- Aktivitaet
+1793481390.767  --- Scan-Durchlauf ---
+1793481390.767  --- Scan-Durchlauf ---
+1793481390.767    CH51 (2451 MHz): -69 dBm  <-- Aktivitaet
+1793481391.845  --- Scan-Durchlauf ---
+1793481391.845  --- Scan-Durchlauf ---
+1793481392.820  --- Scan-Durchlauf ---
+1793481392.820  --- Scan-Durchlauf ---
+1793481392.820    CH50 (2450 MHz): -57 dBm  <-- Aktivitaet
+1793481393.903  --- Scan-Durchlauf ---
+1793481393.903  --- Scan-Durchlauf ---
+1793481393.903    CH51 (2451 MHz): -61 dBm  <-- Aktivitaet
+1793481394.879  --- Scan-Durchlauf ---
+1793481394.879  --- Scan-Durchlauf ---
+1793481395.899  --- Scan-Durchlauf ---
+1793481395.899  --- Scan-Durchlauf ---
+1793481396.871  --- Scan-Durchlauf ---
+1793481396.871  --- Scan-Durchlauf ---
+1793481397.950  --- Scan-Durchlauf ---
+1793481397.950  --- Scan-Durchlauf ---
+1793481398.920  --- Scan-Durchlauf ---
+1793481398.920  --- Scan-Durchlauf ---
+1793481399.999  --- Scan-Durchlauf ---
+1793481399.999  --- Scan-Durchlauf ---
+1793481400.969  --- Scan-Durchlauf ---
+1793481400.969  --- Scan-Durchlauf ---
+1793481402.046  --- Scan-Durchlauf ---
+1793481402.046  --- Scan-Durchlauf ---
+1793481403.017  --- Scan-Durchlauf ---
+1793481403.017  --- Scan-Durchlauf ---
+1793481404.082  --- Scan-Durchlauf ---
+1793481404.082  --- Scan-Durchlauf ---
+1793481405.052  --- Scan-Durchlauf ---
+1793481405.052  --- Scan-Durchlauf ---
+1793481406.137  --- Scan-Durchlauf ---
+1793481406.137  --- Scan-Durchlauf ---
+1793481407.109  --- Scan-Durchlauf ---
+1793481407.109  --- Scan-Durchlauf ---
+1793481408.193  --- Scan-Durchlauf ---
+1793481408.193  --- Scan-Durchlauf ---
+1793481408.193    CH51 (2451 MHz): -54 dBm  <-- Aktivitaet
+1793481409.167  --- Scan-Durchlauf ---
+1793481409.167  --- Scan-Durchlauf ---
+1793481409.167    CH52 (2452 MHz): -74 dBm  <-- Aktivitaet
+1793481410.140  --- Scan-Durchlauf ---
+1793481410.140  --- Scan-Durchlauf ---
+1793481411.222  --- Scan-Durchlauf ---
+1793481411.222  --- Scan-Durchlauf ---
+1793481412.241  --- Scan-Durchlauf ---
+1793481412.241  --- Scan-Durchlauf ---
+1793481413.212  --- Scan-Durchlauf ---
+1793481413.212  --- Scan-Durchlauf ---

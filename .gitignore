@@ -1,0 +1,5 @@
+build/
+.west/
+*.uf2
+.vscode/.ropeproject
+__pycache__/

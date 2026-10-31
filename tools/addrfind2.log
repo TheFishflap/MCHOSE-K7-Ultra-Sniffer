@@ -1,0 +1,68 @@
+# capture start 2026-10-31 22:42:02 port COM5 dauer 24s
+    0.0005  *** Booting nRF Connect SDK v3.4.1-b20f8619ba9a ***
+    0.0005  *** Using Zephyr OS v4.4.2-33fa6a7aac6a ***
+    0.0005  mouse-sniffer: Adress-Finder Bit-Offset+Konvention (Iter 7)
+    0.0005  Probiere 8 Konfigs. Maus DURCHGEHEND bewegen!
+    0.0010  Gewinner = Konfig mit vielen hits bei starkem RSSI.
+    0.0010  HB  cfg=o8-pfx    hits=0 last_rssi=0
+    0.0010  CFG o8-pfx    -> hits=0 last_rssi=0
+    0.0010  HB  cfg=o8-base   hits=0 last_rssi=0
+    0.0010  CFG o8-base   -> hits=0 last_rssi=0
+    0.0010  HB  cfg=o10-pfx   hits=0 last_rssi=0
+    0.0010  HB  cfg=o10-pfx   hits=0 last_rssi=0
+    0.0010  CFG o10-pfx   -> hits=0 last_rssi=0
+    0.0010  HB  cfg=o10-base  hits=0 last_rssi=0
+    0.0010  CFG o10-base  -> hits=0 last_rssi=0
+    0.0010  HB  cfg=o12-pfx   hits=0 last_rssi=0
+    0.0010  CFG o12-pfx   -> hits=0 last_rssi=0
+    0.0010  HB  cfg=o12-base  hits=0 last_rssi=0
+    0.0010  CFG o12-base  -> hits=0 last_rssi=0
+    0.2071  HB  cfg=o6-pfx    hits=0 last_rssi=0
+    0.8121  CFG o6-pfx    -> hits=0 last_rssi=0
+    1.0136  HB  cfg=o6-base   hits=0 last_rssi=0
+    1.2144  PKT o6-base   rssi=-95 : 55 83 4a d0 73 09 42 00 d0 e4 40 e0 aa 42 13 99 90 c7 40 02
+    2.0236  HB  cfg=o6-base   hits=1 last_rssi=-95
+    2.0236  CFG o6-base   -> hits=1 last_rssi=-95
+    3.0353  HB  cfg=o8-pfx    hits=0 last_rssi=-95
+    3.2373  CFG o8-pfx    -> hits=0 last_rssi=-95
+    4.0419  HB  cfg=o8-base   hits=0 last_rssi=-95
+    4.4455  CFG o8-base   -> hits=0 last_rssi=-95
+    5.0493  HB  cfg=o10-pfx   hits=0 last_rssi=-95
+    5.0493  PKT o10-pfx   rssi=-97 : fe 28 21 41 ef 14 90 42 4a 31 34 d0 7a aa 41 ac 40 ca 28 be
+    5.6518  CFG o10-pfx   -> hits=1 last_rssi=-97
+    6.0571  HB  cfg=o10-base  hits=0 last_rssi=-97
+    6.8627  CFG o10-base  -> hits=0 last_rssi=-97
+    7.0643  HB  cfg=o12-pfx   hits=0 last_rssi=-97
+    8.0685  HB  cfg=o12-pfx   hits=0 last_rssi=-97
+    8.0685  CFG o12-pfx   -> hits=0 last_rssi=-97
+    9.0864  HB  cfg=o12-base  hits=0 last_rssi=-97
+    9.3014  CFG o12-base  -> hits=0 last_rssi=-97
+    9.3014  PKT o6-pfx    rssi=-97 : 9b 56 e2 76 b4 7e 4f d4 7b b5 d1 7d e8 6a cd f0 e8 24 57 ec
+    9.9064  HB  cfg=o6-pfx    hits=1 last_rssi=-97
+   10.5090  CFG o6-pfx    -> hits=1 last_rssi=-97
+   10.9127  HB  cfg=o6-base   hits=0 last_rssi=-97
+   11.7162  CFG o6-base   -> hits=0 last_rssi=-97
+   11.9181  HB  cfg=o8-pfx    hits=0 last_rssi=-97
+   12.9260  CFG o8-pfx    -> hits=0 last_rssi=-97
+   12.9260  HB  cfg=o8-base   hits=0 last_rssi=-97
+   13.9359  HB  cfg=o8-base   hits=0 last_rssi=-97
+   14.1385  CFG o8-base   -> hits=0 last_rssi=-97
+   14.9426  HB  cfg=o10-pfx   hits=0 last_rssi=-97
+   15.3456  CFG o10-pfx   -> hits=0 last_rssi=-97
+   15.9618  HB  cfg=o10-base  hits=0 last_rssi=-97
+   16.5930  CFG o10-base  -> hits=0 last_rssi=-97
+   16.9979  HB  cfg=o12-pfx   hits=0 last_rssi=-97
+   17.8045  CFG o12-pfx   -> hits=0 last_rssi=-97
+   18.0072  HB  cfg=o12-base  hits=0 last_rssi=-97
+   19.0178  CFG o12-base  -> hits=0 last_rssi=-97
+   19.0178  HB  cfg=o6-pfx    hits=0 last_rssi=-97
+   20.0254  HB  cfg=o6-pfx    hits=0 last_rssi=-97
+   20.2267  CFG o6-pfx    -> hits=0 last_rssi=-97
+   20.4279  PKT o6-base   rssi=-97 : cd d1 4b 53 7a c2 9a fd 76 dc 8b c3 72 a7 ff e1 9b 4b 94 de
+   21.0302  HB  cfg=o6-base   hits=1 last_rssi=-97
+   21.4323  CFG o6-base   -> hits=1 last_rssi=-97
+   22.0376  HB  cfg=o8-pfx    hits=0 last_rssi=-97
+   22.6410  CFG o8-pfx    -> hits=0 last_rssi=-97
+   23.0572  HB  cfg=o8-base   hits=0 last_rssi=-97
+   23.6733  CFG o8-base   -> hits=0 last_rssi=-97
+   24.0761  HB  cfg=o10-pfx   hits=0 last_rssi=-97

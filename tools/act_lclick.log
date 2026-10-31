@@ -1,0 +1,47 @@
+# capture start 2026-10-31 22:47:40 port COM5 dauer 25s
+    0.0626  PKT rssi=-43 : 52 b1 5a db d9 3c 8e 81 a4 e2 be c8 54 80 50 08 04 00 ab 45 55 2b 15 ad bf 2d ca cc bf 8b e8 00
+    0.0626  HB  total=177 (+2/s) strong=34 (+1) last_rssi=-43
+    0.0626  HB  total=178 (+1/s) strong=34 (+0) last_rssi=-43
+    0.0626  HB  total=182 (+4/s) strong=34 (+0) last_rssi=-43
+    0.0626  HB  total=189 (+7/s) strong=34 (+0) last_rssi=-43
+    0.0626  HB  total=191 (+2/s) strong=34 (+0) last_rssi=-43
+    0.0626  HB  total=192 (+1/s) strong=34 (+0) last_rssi=-43
+    0.0626  HB  total=194 (+2/s) strong=34 (+0) last_rssi=-43
+    0.0631  HB  total=197 (+3/s) strong=34 (+0) last_rssi=-43
+    0.0631  HB  total=201 (+4/s) strong=34 (+0) last_rssi=-43
+    0.0631  HB  total=204 (+3/s) strong=34 (+0) last_rssi=-43
+    0.0631  PKT rssi=-69 : 6a 9a 55 55 55 59 59 69 59 a9 9a 69 aa a6 a6 96 a6 56 65 96 aa 5a 59 9a a9 5a a5 a5 66 6a 59 a5
+    0.0636  PKT rssi=-58 : 55 55 55 54 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.0636  PKT rssi=-58 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    0.2753  PKT rssi=-59 : 4b fa af af ee ea fb af aa ef fb ee ab bb bf fb ae ea fb fa bf ff aa fe aa ee ea eb bf ee ee aa
+    0.2753  PKT rssi=-60 : 6a HB  total=240 (+3/s) strong=39 (+0) last_rssi=-60
+    1.1210  HB  total=240 (+0/s) strong=39 (+0) last_rssi=-60
+    2.1556  HB  total=241 (+1/s) strong=39 (+0) last_rssi=-60
+    3.1727  HB  total=242 (+1/s) strong=39 (+0) last_rssi=-60
+    4.2070  HB  total=244 (+2/s) strong=39 (+0) last_rssi=-60
+    5.2400  HB  total=251 (+7/s) strong=39 (+0) last_rssi=-60
+    6.2722  HB  total=254 (+3/s) strong=39 (+0) last_rssi=-60
+    7.0900  HB  total=256 (+2/s) strong=39 (+0) last_rssi=-60
+    8.1267  HB  total=257 (+1/s) strong=39 (+0) last_rssi=-60
+    9.1452  HB  total=261 (+4/s) strong=39 (+0) last_rssi=-60
+    9.2921  PKT rssi=-69 : 6a 9a 55 55 55 59 59 69 59 a9 9a 69 aa a6 a6 96 a6 56 65 96 aa 5a 59 9b a9 5a a5 a5 66 6a 59 a5
+    9.2921  PKT rssi=-69 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 56 56 65 bd 6f d9 66 55 99 9a aa 95 aa a9 56 a6
+    9.3934  PKT rssi=-58 : 5a aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa
+    9.3934  PKT rssi=-58 : 5a aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa
+    9.6070  PKT rssi=-60 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+    9.6070  PKT rssi=-57 : 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55
+   10.2095  HB  total=272 (+11/s) strong=45 (+6) last_rssi=-57
+   11.2405  HB  total=273 (+1/s) strong=45 (+0) last_rssi=-57
+   12.2748  HB  total=275 (+2/s) strong=45 (+0) last_rssi=-57
+   13.0916  HB  total=278 (+3/s) strong=45 (+0) last_rssi=-57
+   14.1383  HB  total=279 (+1/s) strong=45 (+0) last_rssi=-57
+   15.1417  HB  total=280 (+1/s) strong=45 (+0) last_rssi=-57
+   16.1609  HB  total=285 (+5/s) strong=45 (+0) last_rssi=-57
+   17.2081  HB  total=290 (+5/s) strong=45 (+0) last_rssi=-57
+   18.2280  HB  total=292 (+2/s) strong=45 (+0) last_rssi=-57
+   19.2762  HB  total=295 (+3/s) strong=45 (+0) last_rssi=-57
+   20.1236  HB  total=297 (+2/s) strong=45 (+0) last_rssi=-57
+   21.1570  HB  total=298 (+1/s) strong=45 (+0) last_rssi=-57
+   22.1772  HB  total=303 (+5/s) strong=45 (+0) last_rssi=-57
+   23.2106  HB  total=306 (+3/s) strong=45 (+0) last_rssi=-57
+   24.2430  HB  total=308 (+2/s) strong=45 (+0) last_rssi=-57

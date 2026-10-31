@@ -22,8 +22,10 @@ MouseJack-Forschung von Bastille.
 - [x] Aktivitätskanal der Maus identifiziert: **2450 MHz (CH50)**
 - [x] Modulation bestimmt: **2 MBit GFSK** (Nordic-kompatibel)
 - [x] Sync-/Adresswort gefunden: **`52 b1 5a db`**
-- [~] Paketformat: Rahmen erkannt, **Payload aber verwürfelt (Whitening)** —
-      X-Y/Tasten/Scroll nicht als Werte decodierbar (siehe unten)
+- [x] Funkchip identifiziert (sehr wahrscheinlich): **XN297/XN297L-Clone**
+- [~] Paketformat: Rahmen erkannt, **Payload mit XN297-Scramble verwürfelt** —
+      Scramble-Tabelle bekannt/verifiziert, Felder aber noch nicht decodiert
+      (zu wenige/grob demodulierte Frames; siehe unten)
 - [ ] Board 2: eigenes Paket senden (zurückgestellt)
 
 ## Zentrale Ergebnisse (Stand 2026-10-31)
@@ -34,7 +36,8 @@ MouseJack-Forschung von Bastille.
 | Modulation         | **Nordic 2 MBit** GFSK (`NRF_RADIO_MODE_NRF_2MBIT`)      |
 | Sync-/Adresswort   | **`52 b1 5a db`** (in allen starken Frames konstant)     |
 | Frame-Struktur     | `52 b1 5a db | ?? | 5c/dc | ac | payload…`                |
-| Payload            | **hochentropisch → Whitening/Scrambling** (nicht lesbar) |
+| Funkchip           | wahrscheinlich **XN297/XN297L**-Clone (kein echter Nordic)|
+| Payload            | **XN297-Scramble** (LFSR x⁷+x³+1, Seed 0x71) — Tab. bekannt|
 | RSSI nahe Maus     | ca. −38…−60 dBm (Rauschen/Umgebung: −85…−98 dBm)         |
 
 ### Was blockiert — und warum
@@ -46,26 +49,29 @@ MouseJack-Forschung von Bastille.
    **Pseudo-Promiscuous** (Sync `0xAAAAAA`, CRC aus) liefert Frames — aber nur
    einen Bruchteil der Pakete (~0,5–1 Frame/s).
 
-2. **Payload ist verwürfelt (Whitening).** Hinter dem konstanten `52 b1 5a db`
-   wirkt jedes Byte nahezu zufällig. Getestet wurde die Hypothese, dass das
-   Standard-**BLE-Whitening** (7-Bit-LFSR, Polynom x⁷+x⁴+1) verwendet wird:
-   Brute-Force über **alle 128 Seeds** und beide Bit-Ordnungen, mit einem
-   trennscharfen Scroll-hoch/runter-Test — **negativ** (bester Score 0,32).
-   Also kein Standard-BLE-Whitening, oder mit der niedrigen Fangrate nicht
-   knackbar.
+2. **Payload ist mit XN297-Scramble verwürfelt.** Research deutet stark auf
+   einen **XN297/XN297L-Clone** hin (statt echtem Nordic). Der legt ein festes
+   Scrambling über Adresse + Payload: 7-Bit-LFSR, **Polynom x⁷+x³+1, Seed
+   0x71**, Ausgabe MSB-first gepackt, Funk sendet LSB-first. Die bekannte
+   Scramble-Tabelle (`e3 b1 4b ea …`) wurde aus genau diesem LFSR
+   reproduziert/verifiziert (`tools/xn297.py`). Das Standard-**BLE-Whitening**
+   (x⁷+x⁴+1) war folglich der falsche Polynom → der 128-Seed-Test schlug fehl.
 
-3. **Fangrate zu niedrig**, um Tasten/Scroll statistisch zu trennen (selbst
-   mit beiden Boards). Schwache Leads (nicht belastbar): linke Taste evtl. um
-   Bit `0.0`, Scroll evtl. um byte[9/10] der Payload.
+3. **Fangrate zu niedrig / Demod grob.** Das Pseudo-Promiscuous fängt den
+   XN297 nur grob (~0,5–1 Frame/s, teils bit-verschoben), daher ist das
+   Descramblen auf den vorhandenen Frames noch nicht sauber (Scroll-Vorzeichen
+   nicht eindeutig). Schwache Leads: linke Taste evtl. um Bit `0.0`, Scroll
+   evtl. um byte[9/10].
 
-### Nächster Schritt (anderer Weg)
+### Nächster Schritt: echter XN297-Empfang
 
-Vollständiges Decodieren ist mit nRF-Promiscuous nicht erreichbar (Fangrate +
-unbekanntes Whitening). Der realistische nächste Schritt ist ein Plattform-
-wechsel: **SDR (HackRF/bladeRF) + GNU Radio** für lückenlose, beliebig lange
-Rohaufnahmen auf 2450 MHz. Dann Whitening offline an großen Paketmengen
-reversen. Alternativ hilft der **Treiber/die Software der K7** (enthält oft
-Kanal-/Paketlogik) oder ein USB-Mitschnitt des originalen Dongles.
+Der eigentliche Hebel ist jetzt klar: **XN297-Empfang ist auf nRF-Chips ein
+gelöstes Problem** (DeviationTX / Multiprotocol / goebish). Richtig
+konfiguriert (passende Adresse/Preamble für den XN297, danach pro Byte
+bit-reverse + XOR mit der Scramble-Tabelle) rastet der nRF byte-genau auf
+**jedes** Paket ein → volle Rate → sauberes Descramblen → Felder (X/Y, Tasten,
+Scroll) decodierbar. Alternativ hilft weiterhin der K7-Treiber/Dongle-USB-
+Mitschnitt oder ein SDR für lückenlose Rohaufnahmen.
 
 ## src/main.c — aktueller Stand: Promiscuous-Empfänger
 
@@ -89,7 +95,10 @@ Python der nRF-Toolchain nutzen (hat `pyserial`):
   Vergleichsmodus `name=log.log …` über mehrere Aktionen.
 - **`bits.py`** — bit-weiser Differenzvergleich der Aktionen (Whitening kürzt
   sich im Vergleich weg → Tasten-Bits suchen).
-- **`dewhiten.py`** — Brute-Force über 128 BLE-Whitening-Seeds (Scroll-Test).
+- **`dewhiten.py`** — Brute-Force über 128 BLE-Whitening-Seeds (Scroll-Test;
+  negativ — es ist XN297, nicht BLE).
+- **`xn297.py`** — erzeugt die XN297-Scramble-Tabelle aus dem LFSR
+  (x⁷+x³+1, Seed 0x71) und testet Descramble-Varianten an den Captures.
 - **`scanmon.py` / `guided.py`** — Live-Spektrum bzw. geführter Monitor
   (Phasen Ruhe/Bewegen) für die RSSI-Phase.
 

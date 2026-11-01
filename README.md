@@ -91,6 +91,19 @@ den XN297-Bitstream hardwareseitig nicht ein** — der goebish-Trick ist für
 einen echten **nRF24L01+** erprobt, und der nRF52840-"2MBit"-Modus ist dafuer
 offenbar nicht ausreichend bit-/preamble-kompatibel (via Zephyr-HAL).
 
+**Known-Plaintext-Angriff vorbereitet, aber Demod ist der Flaschenhals:**
+Der USB-HID-Mitschnitt des Dongles (VID 0x3837 PID 0x1001) liefert den
+Klartext — 8-Byte-Report: `id=01 | buttons | X int16 LE | Y int16 LE |
+scroll`. Damit `keystream[i] = rf[i] XOR plaintext[i]` (Scramble ist fest).
+`tools/align.py` holt per bit-weiser Sync-Suche alle Frames (Sync ist
+MSB-first) und `tools/known.py` macht den XOR-Test. Ergebnis mit 46 move- +
+37 lhold-Frames + Mehrheitsentscheid: **kein Byte/Bit trennt move von lhold
+sauber.** Nur byte[2]=`ac` (direkt nach dem Sync) ist ~74 % stabil, weiter
+entfernte Bytes zerfallen auf ~10 % → der nRF52-Demodulator passt nicht
+exakt zur XN297L-PHY (Symboltakt driftet über das Paket). Der KPA ist
+korrekt, braucht aber einen sauberen XN297L-Demod. **Die nRF52-Linie ist
+damit ausgereizt.**
+
 **Empfohlener nächster Weg (Plattform):**
 1. **Echtes nRF24L01+-Modul** (~2 €) an einem MCU — hier läuft goebishs
    XN297-Empfangscode direkt und erprobt. Wahrscheinlich der schnellste Weg

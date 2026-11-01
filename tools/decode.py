@@ -2,6 +2,10 @@
 """
 decode.py - exakter goebish-XN297-Decoder + Mehrheitsentscheid.
 
+Quelle/Credit: goebish, xn297_decod.cpp
+  https://gist.github.com/goebish/f8982353c34f2b71ffe8
+  https://github.com/goebish/nrf24_multipro
+
 Nach goebish xn297_decod.cpp:
   - Adresse (erste ADDR_LEN Bytes): byte ^ xn297_scramble[byte_count]
   - Payload (danach):   rev(byte) ^ rev(xn297_scramble[byte_count])

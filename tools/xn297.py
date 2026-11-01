@@ -2,6 +2,12 @@
 """
 xn297.py - XN297-Descrambling auf die Captures anwenden.
 
+Quelle/Credit: goebish (xn297_decod.cpp, nrf24_multipro) und die
+DeviationTX / DIY-Multiprotocol-TX-Community fuer Scramble-Tabelle,
+LFSR (x^7+x^3+1, Seed 0x71) und Descramble-Schema.
+  https://github.com/goebish/nrf24_multipro
+  https://github.com/pascallanger/DIY-Multiprotocol-TX-Module
+
 Laut Research ist die K7 Ultra kein echter Nordic-Chip, sondern ein
 XN297(L)-Clone. Der legt ein FESTES Scrambling (bekannte Tabelle aus der
 DeviationTX/Multiprotocol-Szene) ueber Adresse + Payload, und sendet

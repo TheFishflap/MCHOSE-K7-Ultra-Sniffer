@@ -170,3 +170,23 @@ Der UF2-Bootloader belegt kurz ein Wechsellaufwerk; danach meldet sich das
 Board wieder als serieller Port. Läuft parallel ein serielles Terminal
 (z. B. nRF Serial Terminal in VS Code), ist der COM-Port blockiert — vorher
 trennen oder USB kurz neu stecken.
+
+## Credits / Quellen
+
+Die XN297-Entschlüsselung dieses Projekts basiert maßgeblich auf der
+Vorarbeit der RC-/Multiprotokoll-Community:
+
+- **goebish** — `xn297_decod.cpp` (XN297-Descrambler: Adresse `byte ^ scramble[i]`,
+  Payload `bit_reverse(byte) ^ bit_reverse(scramble[i])`) und
+  `XN297_emu.ino` im Projekt
+  [goebish/nrf24_multipro](https://github.com/goebish/nrf24_multipro).
+  Gist: https://gist.github.com/goebish/f8982353c34f2b71ffe8
+  Unsere `tools/xn297.py` und `tools/decode.py` setzen genau dieses Schema um.
+- **XN297-Scramble-LFSR** (Polynom x⁷+x³+1, Seed 0x71) aus der
+  DeviationTX / DIY-Multiprotocol-TX-Community
+  ([pascallanger/DIY-Multiprotocol-TX-Module](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module)).
+- **iNav** — `nrf24_cx10.c` (`XN297_UnscramblePayload`, CRC-Flow) als
+  weitere Referenz für den XN297-Empfang.
+
+Danke an goebish und die DeviationTX/Multiprotocol-Entwickler — ohne deren
+offengelegte XN297-Arbeit wäre die Entschlüsselung hier nicht möglich gewesen.

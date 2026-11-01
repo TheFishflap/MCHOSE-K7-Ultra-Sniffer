@@ -68,7 +68,11 @@ of Bastille's MouseJack research.
    sync) is about 74% stable; bytes further out decay to about 10%. That means
    the nRF52 demodulator does not match the XN297L PHY exactly (symbol timing
    drifts across the packet). The attack is correct, but it needs a clean
-   XN297L demodulator. **The nRF52 line is therefore exhausted.**
+   XN297L demodulator. A direct data-rate test ruled out a wrong-rate config
+   error: cycling the promiscuous receiver between `NRF_1MBIT` and
+   `NRF_2MBIT` gave 0 frames at 1 MBit and 29 at 2 MBit (with the mouse sync
+   present), so 2 MBit is confirmed correct and the drift is a genuine PHY
+   mismatch, not a rate mistake. **The nRF52 line is therefore exhausted.**
 
 ### Recommended next path (platform)
 
